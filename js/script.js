@@ -16,7 +16,7 @@ window.onload = function () {
 
         if (fname === "") {
 
-            message.style.color = "#7dff9b";
+            message.className = "form-message form-message--error";
             message.textContent = "Please enter your name.";
 
             document.getElementById("fname").focus();
@@ -26,7 +26,7 @@ window.onload = function () {
 
         if (phone === "") {
 
-            message.style.color = "#7dff9b";
+            message.className = "form-message form-message--error";
             message.textContent = "Please enter your phone number.";
 
             document.getElementById("phone").focus();
@@ -36,7 +36,7 @@ window.onload = function () {
 
         if (phone.length < 10) {
 
-            message.style.color = "#7dff9b";
+            message.className = "form-message form-message--error";
             message.textContent = "Phone number is too short.";
 
             document.getElementById("phone").focus();
@@ -46,7 +46,7 @@ window.onload = function () {
 
         if (meal === "") {
 
-            message.style.color = "#7dff9b";
+            message.className = "form-message form-message--error";
             message.textContent = "Please choose a meal.";
 
             return;
@@ -54,7 +54,7 @@ window.onload = function () {
 
         if (service === "") {
 
-            message.style.color = "#7dff9b";
+            message.className = "form-message form-message--error";
             message.textContent = "Please select a service type.";
 
             return;
@@ -62,7 +62,7 @@ window.onload = function () {
 
         var time = new Date().toLocaleTimeString();
 
-        message.style.color = "#7dff9b";
+        message.className = "form-message form-message--success";
 
         message.textContent =
             "Thanks " + fname +

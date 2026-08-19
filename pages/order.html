@@ -1,152 +1,121 @@
+<!-- order.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Order - Green Leaf Bistro</title>
+    <meta name="description" content="Place an order at Green Leaf Bistro — choose your meal, pick dine-in, takeaway, or delivery.">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Green Leaf Bistro</h1>
+    <header class="site-header">
+        <div class="nav-bar">
+            <a href="index.html" class="brand">
+                <img src="images/greanleaf.png" alt="">
+                Green Leaf Bistro
+            </a>
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="menu.html">Menu</a> |
-        <a href="order.html">Order</a>
-    </nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html" class="active">Order</a></li>
+            </ul>
+        </div>
+    </header>
 
-    <hr>
-
-    <h2>Place Your Order</h2>
-
-    <p>
-        Fill in your details below and we’ll prepare your meal fresh for you.
-    </p>
-
-    <hr>
-
-    <form id="orderForm">
-
-        <label for="fname">First Name:</label><br>
-        <input type="text"
-               id="fname"
-               name="fname">
-        <br><br>
-
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel"
-               id="phone"
-               name="phone">
-        <br><br>
-
-        <label for="meal">Choose Meal:</label><br>
-
-        <select id="meal" name="meal">
-
-            <option value="">
-                -- Select Meal --
-            </option>
-
-            <option value="Grilled Salmon">
-                Grilled Salmon - KSh 2400
-            </option>
-
-            <option value="Creamy Vegan Pasta">
-                Creamy Vegan Pasta - KSh 1600
-            </option>
-
-            <option value="Vegan Burger">
-                Vegan Burger - KSh 1300
-            </option>
-
-            <option value="Fresh Garden Salad">
-                Fresh Garden Salad - KSh 900
-            </option>
-
-            <option value="Vegan Pizza">
-                Vegan Pizza - KSh 1500
-            </option>
-
-            <option value="Tropical Juice">
-                Tropical Juice - KSh 600
-            </option>
-
-        </select>
-
-        <br><br>
-
-        <label for="service">Service Type:</label><br>
-
-        <select id="service" name="service">
-
-            <option value="">
-                -- Select Service --
-            </option>
-
-            <option value="Dine-In">
-                Dine-In
-            </option>
-
-            <option value="Takeaway">
-                Takeaway
-            </option>
-
-            <option value="Delivery">
-                Delivery
-            </option>
-
-        </select>
-
-        <br><br>
-
-        <label for="notes">Special Requests:</label><br>
-
-        <textarea id="notes"
-                  name="notes"
-                  rows="4"
-                  cols="40"
-                  placeholder="Extra cheese, no onions, allergies..."></textarea>
-
-        <br><br>
-
-        <input type="submit" value="Submit Order">
-
-    </form>
-
-    <p id="formMessage"></p>
-
-    <hr>
-
-    <div class="contact-info">
-
-        <h2>Contact Us</h2>
-
-        <p>
-            <b>Location:</b>
-            Nairobi, Kenya
-        </p>
-
-        <p>
-            <b>Phone:</b>
-            +254 765 380 279
-        </p>
-
-        <p>
-            <b>Email:</b>
-            hello@greenleafbistro.com
-        </p>
-
-        <p>
-            <b>Opening Hours:</b>
-            Monday - Sunday | 8:00 AM - 11:00 PM
-        </p>
-
+    <div class="page-hero">
+        <div class="wrap">
+            <span class="hero-eyebrow">Ready When You Are</span>
+            <h1>Place Your Order</h1>
+            <p>Fill in your details below and we'll prepare your meal fresh for you.</p>
+        </div>
     </div>
 
-    <hr>
+    <section class="section">
+        <div class="order-layout">
 
-    <footer>
+            <form id="orderForm" class="form-card" novalidate>
+
+                <div class="field-row">
+                    <div class="field">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Amina">
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="07XX XXX XXX">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="meal">Choose Meal</label>
+                    <select id="meal" name="meal">
+                        <option value="">-- Select Meal --</option>
+                        <option value="Grilled Salmon">Grilled Salmon - KSh 2,400</option>
+                        <option value="Creamy Vegan Pasta">Creamy Vegan Pasta - KSh 1,600</option>
+                        <option value="Vegan Burger">Vegan Burger - KSh 1,300</option>
+                        <option value="Fresh Garden Salad">Fresh Garden Salad - KSh 900</option>
+                        <option value="Vegan Pizza">Vegan Pizza - KSh 1,500</option>
+                        <option value="Tropical Juice">Tropical Juice - KSh 600</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="service">Service Type</label>
+                    <select id="service" name="service">
+                        <option value="">-- Select Service --</option>
+                        <option value="Dine-In">Dine-In</option>
+                        <option value="Takeaway">Takeaway</option>
+                        <option value="Delivery">Delivery</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="notes">Special Requests</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Extra cheese, no onions, allergies..."></textarea>
+                </div>
+
+                <input type="submit" value="Submit Order">
+
+                <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+
+            </form>
+
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+
+                <ul class="contact-list">
+                    <li>
+                        <span class="contact-label">Location</span>
+                        <span class="contact-value">Nairobi, Kenya</span>
+                    </li>
+
+                    <li>
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">+254 765 380 279</span>
+                    </li>
+
+                    <li>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">hello@greenleafbistro.com</span>
+                    </li>
+
+                    <li>
+                        <span class="contact-label">Opening Hours</span>
+                        <span class="contact-value">Mon &ndash; Sun, 8:00 AM &ndash; 11:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
         Copyright 2026 Green Leaf Bistro
     </footer>
 

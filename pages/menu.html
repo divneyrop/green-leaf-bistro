@@ -4,157 +4,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Menu - Green Leaf Bistro</title>
+    <meta name="description" content="See today's menu at Green Leaf Bistro — grilled dishes, vegan mains, salads, and fresh juice.">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Green Leaf Bistro</h1>
-
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="menu.html">Menu</a> |
-        <a href="order.html">Order</a>
-    </nav>
-
-    <hr>
-
-    <h2>Today's Menu</h2>
-
-    <div class="menu-container">
-
-        <div class="food-card">
-            <img src="images/vegan salmon.jpg"
-                 alt="Salmon">
-
-            <h3>Grilled Salmon</h3>
-
-            <p>
-                Herb grilled salmon served with fresh vegetables.
-            </p>
-
-            <p class="price">
-                KSh 2400
-            </p>
-
-            <a href="order.html">
-                <button class="order-btn">
-                    Order Now
-                </button>
+    <header class="site-header">
+        <div class="nav-bar">
+            <a href="index.html" class="brand">
+                <img src="images/greanleaf.png" alt="">
+                Green Leaf Bistro
             </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
         </div>
+    </header>
 
-        <div class="food-card">
-            <img src="images/vegan pasta.jpg"
-                 alt="Pasta">
-
-            <h3>Creamy Vegan Pasta</h3>
-
-            <p>
-                Creamy pasta mixed with grilled tofu and herbs.
-            </p>
-
-            <p class="price">
-                KSh 1600
-            </p>
-
-            <a href="order.html">
-                <button class="order-btn">
-                    Order Now
-                </button>
-            </a>
+    <div class="page-hero">
+        <div class="wrap">
+            <span class="hero-eyebrow">Today's Selection</span>
+            <h1>Today's Menu</h1>
+            <p>Six dishes, made fresh this morning. Prices in Kenyan shillings.</p>
         </div>
-
-        <div class="food-card">
-            <img src="images/vegan burger.jpeg"
-                 alt="Burger">
-
-            <h3>Vegan Burger</h3>
-
-            <p>
-                Plant-based burger served with crispy fries.
-            </p>
-
-            <p class="price">
-                KSh 1300
-            </p>
-
-            <a href="order.html">
-                <button class="order-btn">
-                    Order Now
-                </button>
-            </a>
-        </div>
-
-        <div class="food-card">
-            <img src="images/salad.jpeg"
-                 alt="Salad">
-
-            <h3>Fresh Garden Salad</h3>
-
-            <p>
-                Fresh vegetables tossed with house dressing.
-            </p>
-
-            <p class="price">
-                KSh 900
-            </p>
-
-            <a href="order.html">
-                <button class="order-btn">
-                    Order Now
-                </button>
-            </a>
-        </div>
-
-        <div class="food-card">
-            <img src="images/vegan pizza.jpg"
-                 alt="Pizza">
-
-            <h3>Vegan Pizza</h3>
-
-            <p>
-                Crispy pizza topped with plant-based cheese and sauce.
-            </p>
-
-            <p class="price">
-                KSh 1500
-            </p>
-
-            <a href="order.html">
-                <button class="order-btn">
-                    Order Now
-                </button>
-            </a>
-        </div>
-
-        <div class="food-card">
-            <img src="images/juice.avif"
-                 alt="Juice">
-
-            <h3>Tropical Juice</h3>
-
-            <p>
-                Fresh mixed fruit juice served chilled.
-            </p>
-
-            <p class="price">
-                KSh 600
-            </p>
-
-            <a href="order.html">
-                <button class="order-btn">
-                    Order Now
-                </button>
-            </a>
-        </div>
-
     </div>
 
-    <hr>
+    <section class="section">
 
-    <footer>
+        <div class="menu-container">
+
+            <div class="food-card">
+                <div class="food-media">
+                    <img src="images/vegan salmon.jpg" alt="Herb grilled salmon with vegetables">
+                </div>
+                <div class="food-body">
+                    <h3>Grilled Salmon</h3>
+                    <p>Herb grilled salmon served with fresh vegetables.</p>
+                    <span class="price">KSh 2,400</span>
+                    <a href="order.html">
+                        <button class="order-btn">Order Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="food-media">
+                    <img src="images/vegan pasta.jpg" alt="Creamy vegan pasta with tofu and herbs">
+                </div>
+                <div class="food-body">
+                    <h3>Creamy Vegan Pasta</h3>
+                    <p>Creamy pasta mixed with grilled tofu and herbs.</p>
+                    <span class="price">KSh 1,600</span>
+                    <a href="order.html">
+                        <button class="order-btn">Order Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="food-media">
+                    <img src="images/vegan burger.jpeg" alt="Plant-based burger with crispy fries">
+                </div>
+                <div class="food-body">
+                    <h3>Vegan Burger</h3>
+                    <p>Plant-based burger served with crispy fries.</p>
+                    <span class="price">KSh 1,300</span>
+                    <a href="order.html">
+                        <button class="order-btn">Order Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="food-media">
+                    <img src="images/salad.jpeg" alt="Fresh garden salad with house dressing">
+                </div>
+                <div class="food-body">
+                    <h3>Fresh Garden Salad</h3>
+                    <p>Fresh vegetables tossed with house dressing.</p>
+                    <span class="price">KSh 900</span>
+                    <a href="order.html">
+                        <button class="order-btn">Order Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="food-media">
+                    <img src="images/vegan pizza.jpg" alt="Crispy vegan pizza with plant-based cheese">
+                </div>
+                <div class="food-body">
+                    <h3>Vegan Pizza</h3>
+                    <p>Crispy pizza topped with plant-based cheese and sauce.</p>
+                    <span class="price">KSh 1,500</span>
+                    <a href="order.html">
+                        <button class="order-btn">Order Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="food-media">
+                    <img src="images/juice.avif" alt="Chilled tropical fruit juice">
+                </div>
+                <div class="food-body">
+                    <h3>Tropical Juice</h3>
+                    <p>Fresh mixed fruit juice served chilled.</p>
+                    <span class="price">KSh 600</span>
+                    <a href="order.html">
+                        <button class="order-btn">Order Now</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
         Copyright 2026 Green Leaf Bistro
     </footer>
 

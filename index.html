@@ -4,122 +4,172 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Green Leaf Bistro</title>
+    <meta name="description" content="Green Leaf Bistro — a Nairobi restaurant serving fresh, plant-forward meals, grilled dishes, and healthy bowls made daily.">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="heading_top">
+    <header class="site-header">
+        <div class="nav-bar">
+            <a href="index.html" class="brand">
+                <img src="images/greanleaf.png" alt="">
+                Green Leaf Bistro
+            </a>
 
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="menu.html">Menu</a> |
-            <a href="order.html">Order</a>
-        </nav>
-
-        <div class="heading">
-            <span class="hero-eyebrow">Green Leaf Bistro</span>
-
-            <p>
-                Fresh flavors, healthy meals, and a calm modern dining experience.
-            </p>
-
-            <a href="order.html" class="btn">Order Now</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
         </div>
 
+        <div class="hero">
+            <div class="hero-copy">
+                <span class="hero-eyebrow">Nairobi's plant-forward table</span>
+
+                <h1>Fresh flavors, <em>honest</em> cooking.</h1>
+
+                <p>
+                    A calm, modern dining room built around grilled dishes, healthy bowls,
+                    and drinks made fresh — the kind of meal you'd cook for yourself, if you had the time.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                    <a href="menu.html" class="btn btn-ghost">View Menu</a>
+                </div>
+            </div>
+
+            <div class="hero-media">
+                <img src="images/greanleaf.png" alt="Green Leaf Bistro emblem">
+            </div>
+        </div>
     </header>
 
-    <hr>
+    <section class="section">
+        <div class="split">
+            <img src="images/greanleaf.png" alt="Green Leaf Bistro emblem" width="450">
 
-    <img src="images/greanleaf.png"
-         alt="Green Leaf Bistro"
-         width="450"
-         class="center-image">
+            <div>
+                <span class="section-kicker">About Us</span>
+                <h2>Cooked with care, served without fuss</h2>
 
-    <h2>About Us</h2>
+                <p>
+                    Green Leaf Bistro is a cozy restaurant focused on fresh ingredients,
+                    grilled dishes, healthy bowls, and refreshing drinks.
+                </p>
 
-    <p>
-        Green Leaf Bistro is a cozy restaurant focused on fresh ingredients,
-        grilled dishes, healthy bowls, and refreshing drinks.
-    </p>
+                <p>
+                    Whether you're stopping by for lunch, dinner, or takeaway,
+                    we serve meals prepared daily with care and quality.
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <p>
-        Whether you're stopping by for lunch, dinner, or takeaway,
-        we serve meals prepared daily with care and quality.
-    </p>
-
-    <hr>
-
-    <h2>Popular Dishes</h2>
-
-    <div class="menu-container">
-
-        <div class="food-card">
-            <img src="images/vegan salmon.jpg"
-                 alt="Salmon">
-
-            <h3>Grilled Salmon</h3>
-
-            <p>
-                Fresh salmon grilled with herbs and served with vegetables.
-            </p>
-
-            <p class="price">
-                KSh 2400
-            </p>
+    <section class="section">
+        <div class="section-head">
+            <span class="section-kicker">On the Menu</span>
+            <h2>Popular Dishes</h2>
         </div>
 
-        <div class="food-card">
-            <img src="images/vegan pasta.jpg"
-                 alt="Pasta">
+        <div class="menu-container">
 
-            <h3>Creamy Pasta</h3>
+            <div class="food-card">
+                <div class="food-media">
+                    <img src="images/vegan salmon.jpg" alt="Grilled salmon fillet with vegetables">
+                </div>
+                <div class="food-body">
+                    <h3>Grilled Salmon</h3>
+                    <p>Fresh salmon grilled with herbs and served with vegetables.</p>
+                    <span class="price">KSh 2,400</span>
+                </div>
+            </div>
 
-            <p>
-                Rich creamy pasta served with grilled chicken and cheese.
-            </p>
+            <div class="food-card">
+                <div class="food-media">
+                    <img src="images/vegan pasta.jpg" alt="Creamy pasta with grilled chicken">
+                </div>
+                <div class="food-body">
+                    <h3>Creamy Pasta</h3>
+                    <p>Rich creamy pasta served with grilled chicken and cheese.</p>
+                    <span class="price">KSh 1,600</span>
+                </div>
+            </div>
 
-            <p class="price">
-                KSh 1600
-            </p>
+            <div class="food-card">
+                <div class="food-media">
+                    <img src="images/vegan burger.jpeg" alt="Classic beef burger with fries">
+                </div>
+                <div class="food-body">
+                    <h3>Classic Burger</h3>
+                    <p>Juicy beef burger with cheese, lettuce, and fries.</p>
+                    <span class="price">KSh 1,300</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-head">
+            <span class="section-kicker">The Difference</span>
+            <h2>Why Choose Us?</h2>
         </div>
 
-        <div class="food-card">
-            <img src="images/vegan burger.jpeg"
-                 alt="Burger">
+        <ul class="feature-grid">
+            <li class="feature-card">
+                <span class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-4-1-7-5-7-10a7 7 0 0 1 14 0c0 5-3 9-7 10Z"/><path d="M12 21V9"/></svg>
+                </span>
+                <div>
+                    <h3>Fresh Daily</h3>
+                    <p>Ingredients sourced and prepped every morning, never held over.</p>
+                </div>
+            </li>
 
-            <h3>Classic Burger</h3>
+            <li class="feature-card">
+                <span class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                </span>
+                <div>
+                    <h3>Fast Takeaway</h3>
+                    <p>Order ahead and skip the wait — ready when you arrive.</p>
+                </div>
+            </li>
 
-            <p>
-                Juicy beef burger with cheese, lettuce, and fries.
-            </p>
+            <li class="feature-card">
+                <span class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5"/><path d="M5 10v10h14V10"/></svg>
+                </span>
+                <div>
+                    <h3>Comfortable Space</h3>
+                    <p>A calm dining room designed for slow lunches and easy evenings.</p>
+                </div>
+            </li>
 
-            <p class="price">
-                KSh 1300
-            </p>
-        </div>
+            <li class="feature-card">
+                <span class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12 12 4 4 12l8 8 8-8Z"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/></svg>
+                </span>
+                <div>
+                    <h3>Fair Pricing</h3>
+                    <p>Honest, everyday prices on meals made from real ingredients.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
 
+    <div class="cta-band">
+        <h2>Hungry yet?</h2>
+        <p>Browse the full menu and get your order started in minutes.</p>
+        <a href="menu.html" class="btn btn-primary">View Full Menu</a>
     </div>
 
-    <hr>
-
-    <h2>Why Choose Us?</h2>
-
-    <ul>
-        <li>Fresh ingredients every day</li>
-        <li>Fast takeaway service</li>
-        <li>Comfortable dining space</li>
-        <li>Affordable meals</li>
-    </ul>
-
-    <hr>
-
-    <a href="menu.html" class="btn">
-        View Full Menu
-    </a>
-
-    <footer>
+    <footer class="site-footer">
         Copyright 2026 Green Leaf Bistro
     </footer>
 
