@@ -45,10 +45,10 @@ green-leaf-bistro/
 ├── index.html
 ├── menu.html
 ├── order.html
-├── style.css
+├── ../css/style.css
 ├── script.js
 │
-├── images/
+├── ../images/
 │   ├── greanleaf.png
 │   ├── juice.avif
 │   ├── salad.jpeg
