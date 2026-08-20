@@ -122,7 +122,7 @@ hr {
     height: 34px;
     border-radius: 0;
     margin: 0;
-    filter: brightness(0) saturate(100%) invert(94%) sepia(9%) saturate(342%) hue-rotate(357deg) brightness(101%) contrast(93%);
+    filter: brightness(-8) saturate(100%) invert(94%) sepia(9%) saturate(342%) hue-rotate(357deg) brightness(101%) contrast(93%);
 }
 
 .nav-links {
